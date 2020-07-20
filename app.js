@@ -12,6 +12,14 @@ app.get("/homepage", function (req, res) {
   res.render("homepage");
 });
 
+app.get("/login", function (req, res) {
+  res.render("login");
+});
+
+app.get("/blog", function (req, res) {
+  res.render("blog");
+});
+
 app.listen(3000, function () {
   console.log("Serve on Door is running successfully...");
 });
