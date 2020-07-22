@@ -24,6 +24,14 @@ app.get("/blog", function (req, res) {
   res.render("blog");
 });
 
+app.get("/registerasprofessional", function (req, res) {
+  res.render("Register");
+});
+
+app.get("/about", function (req, res) {
+  res.render("About");
+});
+
 app.listen(3000, function () {
   console.log("Serve on Door is running successfully...");
 });

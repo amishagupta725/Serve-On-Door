@@ -19,6 +19,26 @@
   padding: 100px;
   background-size: cover;
 }
+
+.salon {
+  background-image: url(https://images.unsplash.com/photo-1526045478516-99145907023c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+  /* background-blend-mode: darken; */
+  margin: 0px 0px;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding: 100px;
+  background-size: cover;
+}
+
+.register {
+  background-image: url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+  /* background-blend-mode: darken; */
+  margin: 0px 0px;
+  background-repeat: no-repeat;
+  padding: 100px;
+  background-size: cover;
+}
+
 #heading {
   text-align: center;
   color: white;
@@ -198,4 +218,9 @@ ul {
 
 hr {
   border-top: 1px solid #959c9c;
+}
+
+.v {
+  border-left: 6px solid #1e1d1f;
+  height: 50px;
 }
