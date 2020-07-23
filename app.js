@@ -32,6 +32,10 @@ app.get("/about", function (req, res) {
   res.render("About");
 });
 
+app.get("/review", function (req, res) {
+  res.render("review");
+});
+
 app.listen(3000, function () {
   console.log("Serve on Door is running successfully...");
 });
