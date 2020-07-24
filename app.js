@@ -24,6 +24,10 @@ app.get("/blog", function (req, res) {
   res.render("blog");
 });
 
+app.get("/term", function (req, res) {
+  res.render("term");
+});
+
 app.get("/registerasprofessional", function (req, res) {
   res.render("Register");
 });
