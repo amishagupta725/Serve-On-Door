@@ -40,6 +40,10 @@ app.get("/review", function (req, res) {
   res.render("review");
 });
 
+app.get("/privacy", function (req, res) {
+  res.render("privacy");
+});
+
 app.listen(3000, function () {
   console.log("Serve on Door is running successfully...");
 });
