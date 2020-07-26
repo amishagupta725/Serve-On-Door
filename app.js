@@ -48,6 +48,10 @@ app.get("/contact", function (req, res) {
   res.render("contact");
 });
 
+app.get("/services", function (req, res) {
+  res.render("service");
+});
+
 app.listen(3000, function () {
   console.log("Serve on Door is running successfully...");
 });
