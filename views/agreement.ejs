@@ -1,0 +1,96 @@
+<%- include ("./partials/header") %>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container">
+  <h2
+    style="
+      text-align: center;
+      font-weight: bold;
+      color: #3d3c3a;
+      margin-top: 30px;
+    "
+  >
+    I am Safe and Healthy
+  </h2>
+  <p
+    style="
+      margin-top: 20px;
+      color: #7a7976;
+      text-align: center;
+      font-weight: bolder;
+    "
+  >
+    COVID-19 Self Health Declaration: Your honest response will ensure your
+    safety as well as that of our professionals
+  </p>
+  <hr />
+  <div
+    style="
+      font-weight: bold;
+      margin-left: 100px;
+      margin-top: 50px;
+      margin-right: 100px;
+      padding-right: 100px;
+    "
+  >
+    <input id="accept" name="accept" type="checkbox" value="y" />
+    <span style="padding-left: 10px;">Click here to agree</span><br />
+    <ul
+      style="
+        font-weight: normal;
+        margin-top: 10px;
+        color: #636361;
+        padding-left: 10px;
+      "
+    >
+      <li style="padding-top: 5px;">
+        • I am not suffering from flu-like symptoms: Fever, Cough,
+        Breathlessness, Sore throat etc.
+      </li>
+      <li style="padding-top: 5px;">
+        • I have not travelled domestically or internationally in last 14 days
+      </li>
+      <li style="padding-top: 5px;">
+        • I have not come in contact with an COVID-19 case in last 14 days
+      </li>
+      <li style="padding-top: 5px;">
+        • I understand that while, Serve On Door is taking all necessary safety
+        & hygiene precautions, it cannot be held liable in the unfortunate event
+        that a customer or professional is diagnosed with COVID-19
+      </li>
+    </ul>
+
+      <input
+        id="submitbtn"
+        disabled="disabled"
+        name="Submit"
+        type="submit"
+        value="I Agree"
+        style="
+          padding-right: 100px;
+          padding-left: 100px;
+          margin-top: 20px;
+          margin-left: 300px;
+          border-radius: 10px;
+          background-color: black;
+          color: white;
+          padding-top: 6px;
+          padding-bottom: 6px;
+        "
+      />
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $("#accept").click(function () {
+    if ($("#submitbtn").is(":disabled")) {
+      $("#submitbtn").removeAttr("disabled");
+    } else {
+      $("#submitbtn").attr("disabled", "disabled");
+    }
+  });
+  $("#submitbtn").click(function(){
+    window.location.href = "/phone";
+  })
+</script>
+<%- include ("./partials/footer") %>

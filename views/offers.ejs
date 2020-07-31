@@ -1,0 +1,141 @@
+<%- include ("./partials/header") %>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container">
+  <h2 style="font-weight: bolder; text-align: center; margin-top: 30px;">
+    Offers, Promos & Gift Cards
+  </h2>
+  <div style="margin-top: 30px; margin-left: 400px;">
+    <input
+      type="text"
+      placeholder="Enter Coupon Code"
+      style="
+        padding-top: 10px;
+        padding-right: 150px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        font-weight: bolder;
+        color: #3d3c39;
+      "
+    />
+  </div>
+  <hr style="width: 640px;" />
+  <div class="row">
+    <div class="col-md-6">
+      <h4
+        style="
+          line-height: 0em;
+          margin-left: 270px;
+          font-weight: bold;
+          color: #5a5d5e;
+        "
+      >
+        Gift Cards
+      </h4>
+    </div>
+    <div class="col-md-6">
+      <h4
+        style="
+          line-height: 0em;
+          margin-left: 80px;
+          font-weight: bold;
+          color: #24a0ed;
+          margin-top: 0em;
+        "
+      >
+        Register a new Gift Card
+        <i
+          class="fa fa-chevron-right"
+          aria-hidden="true"
+          style="margin-top: 0em;"
+        ></i>
+      </h4>
+    </div>
+  </div>
+  <hr style="margin-top: 2px; width: 640px;" />
+  <h4
+    style="
+      line-height: 0em;
+      margin-left: 270px;
+      font-weight: bold;
+      margin-top: 30px;
+      color: #5a5d5e;
+    "
+  >
+    Payment Offers
+  </h4>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <input
+          type="checkbox"
+          style="
+            width: 50px;
+            height: 50px;
+            margin-left: 250px;
+            margin-top: 15px;
+          "
+        />
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-8" style="padding-left: 50px; margin-top: 8px;">
+        <h5 style="font-weight: bolder;">
+          15% off upto Rs. 250 | Use code
+          <span style="color: #24a0ed;">ABC123</span>
+        </h5>
+        <h5 style="color: #5a5d5e; line-height: 0em;">
+          15% off upto Rs. 250 on min. order value of Rs. 499
+        </h5>
+        <h6 style="color: #24a0ed;">T&C</h6>
+      </div>
+    </div>
+  </div>
+  <hr style="margin-top: 6px; width: 600px;" />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <input
+          type="checkbox"
+          style="width: 50px; height: 50px; margin-left: 250px;"
+        />
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-8" style="padding-left: 50px;">
+        <h5 style="font-weight: bolder;">
+          15% off upto Rs. 250 | Use code
+          <span style="color: #24a0ed;">ABC123</span>
+        </h5>
+        <h5 style="color: #5a5d5e; line-height: 0em;">
+          15% off upto Rs. 250 on min. order value of Rs. 499
+        </h5>
+        <h6 style="color: #24a0ed;">T&C</h6>
+      </div>
+    </div>
+  </div>
+  <div
+    class="btn"
+    id="submitbtn"
+    style="
+      background-color: #130730;
+      padding-left: 50px;
+      padding-right: 40px;
+      padding-top: 10px;
+      padding-left: 40px;
+      text-align: center;
+      font-weight: bolder;
+      color: white;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-left: 450px;
+    "
+  >
+    Proceed to Payment
+  </div>
+</div>
+
+<script type="text/javascript">
+  $("#submitbtn").click(function () {
+    window.location.href = "/payment";
+  });
+</script>
+
+<%- include ("./partials/footer") %>

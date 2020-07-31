@@ -1,0 +1,61 @@
+<%- include ("./partials/header") %>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container">
+  <h2
+    style="
+      text-align: center;
+      font-weight: bold;
+      color: #3d3c3a;
+      margin-top: 30px;
+    "
+  >
+    Salon at Home
+  </h2>
+  <hr />
+  <h3
+    style="
+      text-align: center;
+      font-weight: bold;
+      color: #3d3c3a;
+      margin-top: 30px;
+    "
+  >
+    Where do you want the service?
+  </h3>
+  <button
+    type="button"
+    style="
+      margin-top: 30px;
+      margin-left: 470px;
+      padding-left: 20px;
+      padding-right: 20px;
+    "
+    class="btn btn-info submitbtn"
+  >
+    Your current location
+  </button>
+  <button
+    type="button"
+    class="btn btn-outline-info submitbtn"
+    style="
+      margin-top: 15px;
+      margin-left: 470px;
+      padding-left: 20px;
+      padding-right: 20px;
+      outline: 1px solid #24a0ed;
+      color: #24a0ed;
+      background-color: white;
+      border-radius: 20px;
+    "
+  >
+    Some other location
+  </button>
+</div>
+
+<script type="text/javascript">
+  $(".submitbtn").click(function () {
+    window.location.href = "/locationform";
+  });
+</script>
+
+<%- include ("./partials/footer") %>

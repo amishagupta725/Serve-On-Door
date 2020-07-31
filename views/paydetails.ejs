@@ -1,0 +1,104 @@
+<%- include ("./partials/header") %>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div class="container" style="margin-top: 40px; margin-left: 400px;">
+  <div class="row">
+    <div class="col-md-5" style="outline: 1px solid black; height: 660px;">
+      <h2 style="font-weight: bold; padding-left: 20px;">Payment Details</h2>
+      <hr />
+      <div class="row">
+        <div class="col-md-6" style="margin-left: 50px;">
+          <h4 style="font-weight: bolder; color: #362f2f;">Item Total</h4>
+          <h5 style="font-weight: bolder;">Offer Discount</h5>
+          <h5 style="font-weight: bolder; color: #807d7d;">
+            Safety & Hygiene Fee
+          </h5>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <h4 style="font-weight: bolder; color: #362f2f; padding-left: 50px;">
+            Rs. 1020
+          </h4>
+          <h5 style="font-weight: bolder; color: #24a0ed; padding-left: 60px;">
+            - Rs. 320
+          </h5>
+          <h5 style="font-weight: bolder; color: #807d7d; padding-left: 70px;">
+            Rs. 49
+          </h5>
+        </div>
+      </div>
+      <hr style="margin-top: 15px; padding-top: 2px; color: #807d7d;" />
+      <div class="row">
+        <div class="col-md-6" style="margin-left: 50px;">
+          <h4 style="font-weight: bolder; line-height: 0em;">Total</h4>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <h4
+            style="font-weight: bolder; line-height: 0em; padding-left: 60px;"
+          >
+            Rs. 749
+          </h4>
+        </div>
+      </div>
+      <hr style="margin-top: 15px; padding-top: 2px; color: #807d7d;" />
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-md-7" style="margin-left: 50px;">
+          <h5 style="font-weight: bolder; color: #807d7d;">
+            Offers promos and gift cards
+          </h5>
+          <h5 style="font-weight: bolder; color: #24a0ed;">
+            2 offers available
+          </h5>
+          <h4 style="font-weight: bolder; margin-top: 25px;">Wax & Groom</h4>
+          <ul style="color: #807d7d; padding-left: 2px; font-weight: 4em;">
+            <li>• Eyebrow threading</li>
+            <li>• Upper lip threading</li>
+            <li>
+              • Full arms waxing including underarms <br /><span
+                style="padding-left: 10px;"
+                >( honey )</span
+              >
+            </li>
+            <li>• Waxing below knees</li>
+          </ul>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+          <h4 style="font-weight: bolder; color: #24a0ed; padding-left: 100px;">
+            <i id="offers" class="fa fa-chevron-right" aria-hidden="true"></i>
+          </h4>
+        </div>
+      </div>
+      <h5 style="color: #24a0ed; text-align: center; font-weight: bolder;">
+        Rs. 100 Cancellation fee, 4 hrs prior to service time
+      </h5>
+      <div
+        id="submitbtn"
+        class="btn"
+        style="
+          margin-top: 30px;
+          margin-left: 140px;
+          padding-left: 50px;
+          padding-right: 50px;
+          background-color: #1f0638;
+          color: white;
+          border-radius: 10px;
+        "
+      >
+        Pay Rs.749
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $("#submitbtn").click(function () {
+    window.location.href = "/payment";
+  });
+  $("#offers").click(function () {
+    window.location.href = "/offers";
+  });
+</script>
+
+<%- include ("./partials/footer") %>

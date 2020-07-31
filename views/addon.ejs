@@ -1,0 +1,128 @@
+<%- include ("./partials/header") %>
+<h1
+  style="
+    text-align: center;
+    font-weight: bold;
+    color: #3d3c3a;
+    margin-top: 30px;
+  "
+>
+  Add - ons
+</h1>
+<div class="container">
+  <div
+    class="row text-center"
+    style="display: flex; flex-wrap: wrap; margin-top: 30px;"
+  >
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" style="box-shadow: 5px 8px 10px #cbc6cf;">
+        <img
+          style="height: 150px;"
+          src="data:image/png;base64,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"
+        />
+        <div class="caption">
+          <h4>I don't require add-ons</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" style="box-shadow: 5px 8px 10px #cbc6cf;">
+        <img
+          style="height: 150px;"
+          src="https://images.unsplash.com/photo-1584297091582-222f54ba4dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+        />
+        <div class="caption">
+          <h4>Chin Threading Rs.29</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" style="box-shadow: 5px 8px 10px #cbc6cf;">
+        <img
+          style="height: 150px;"
+          src="https://images.unsplash.com/photo-1584297091582-222f54ba4dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+        />
+        <div class="caption">
+          <h4>Forehead Threading Rs.39</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" style="box-shadow: 5px 8px 10px #cbc6cf;">
+        <img
+          style="height: 150px;"
+          src="https://images.unsplash.com/photo-1584297091582-222f54ba4dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+        />
+        <div class="caption">
+          <h4>Hair Trim Rs.249</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="row text-center"
+    style="display: flex; flex-wrap: wrap; margin-top: 30px;"
+  >
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" style="box-shadow: 5px 8px 10px #cbc6cf;">
+        <img
+          style="height: 150px;"
+          src="https://images.unsplash.com/photo-1584297091582-222f54ba4dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+        />
+        <div class="caption">
+          <h4>Face and neck detan Rs.400</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" style="box-shadow: 5px 8px 10px #cbc6cf;">
+        <img
+          style="height: 150px;"
+          src="https://images.unsplash.com/photo-1584297091582-222f54ba4dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+        />
+        <div class="caption">
+          <h4>Face & neck bleach Rs.250</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" style="box-shadow: 5px 8px 10px #cbc6cf;">
+        <img
+          style="height: 150px;"
+          src="https://images.unsplash.com/photo-1584297091582-222f54ba4dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+        />
+        <div class="caption">
+          <h4>Fruit Cleanup Rs.500</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail" style="box-shadow: 5px 8px 10px #cbc6cf;">
+        <img
+          style="height: 150px;"
+          src="https://images.unsplash.com/photo-1584297091582-222f54ba4dc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+        />
+        <div class="caption">
+          <h4>Hair Wash Rs.300</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <a
+    href="/agreement"
+    class="btn"
+    style="
+      background-color: #3d3c3a;
+      color: white;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 30px;
+      margin-left: 500px;
+    "
+    >Next</a
+  >
+</div>
+
+<%- include ("./partials/footer") %>

@@ -1,0 +1,67 @@
+<%- include ("./partials/header") %>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container">
+  <h2
+    style="
+      text-align: center;
+      font-weight: bold;
+      color: #3d3c3a;
+      margin-top: 30px;
+    "
+  >
+    Enter your Phone Number
+  </h2>
+  <hr />
+  <div
+    style="
+      font-weight: bold;
+      margin-left: 100px;
+      margin-top: 50px;
+      margin-right: 100px;
+      padding-right: 100px;
+    "
+  >
+    <input id="phone" name="phone" type="textbox" style="padding-top: 6px; padding-bottom: 6px; padding-left:10px;padding-right:10px;border-radius: 10px;margin-left:350px;text-align: center;color: #3d3c3a;" placeholder="Phone Number"/>
+    
+
+      <input
+        id="submitbtn"
+        disabled="disabled"
+        name="Submit"
+        type="submit"
+        value="Continue"
+        style="
+          padding-right: 100px;
+          padding-left: 100px;
+          margin-top: 40px;
+          margin-left: 330px;
+          border-radius: 10px;
+          background-color: black;
+          color: white;
+          padding-top: 6px;
+          padding-bottom: 6px;
+        "
+      />
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#submitbtn').prop('disabled', true);
+    $('#phone').keyup(function () {
+        var strLen = $(this).val().length;
+        if (strLen == 10) { //it can be any number 0 to N
+            $('#submitbtn').prop('disabled', false);
+        }
+        else{
+            $('#submitbtn').prop('disabled', true);
+        }
+    })
+});
+$("#submitbtn").click(function(){
+    window.location.href = "/verification";
+  })
+</script>
+
+<%- include ("./partials/footer") %>
